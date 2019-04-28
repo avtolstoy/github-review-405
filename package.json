@@ -1,0 +1,37 @@
+{
+  "name": "github-review-405",
+  "version": "1.0.0",
+  "description": "A tiny tool to 'workaround' GitHub 405 error when submitting a PR review with a moderately large number of comments. Instead of submitting them as part of the review, this tool will fetch all pending review comments and submit them one by one as single comments.",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bin/github-review-405.js"
+  },
+  "bin": {
+    "github-review-405": "./bin/github-review-405.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avtolstoy/github-review-405.git"
+  },
+  "keywords": [
+    "github",
+    "workaround",
+    "review",
+    "pr",
+    "tool"
+  ],
+  "author": "Andrey Tolstoy <avtolstoy@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/avtolstoy/github-review-405/issues"
+  },
+  "homepage": "https://github.com/avtolstoy/github-review-405#readme",
+  "dependencies": {
+    "@octokit/plugin-retry": "^2.2.0",
+    "@octokit/plugin-throttling": "^2.4.0",
+    "@octokit/rest": "^16.25.0",
+    "esm": "^3.2.22",
+    "node-getopt": "^0.3.2"
+  }
+}
